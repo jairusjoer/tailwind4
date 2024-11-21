@@ -1,0 +1,45 @@
+@mixin light {
+  color-scheme: light;
+
+  --color-background: var(--color-zinc-100);
+  --color-background-subtle: var(--color-zinc-50);
+
+  --color-foreground: var(--color-zinc-950);
+  --color-foreground-subtle: var(--color-zinc-600);
+
+  --color-neutral: var(--color-zinc-950);
+  --color-neutral-subtle: var(--color-zinc-200);
+
+  --color-brand-bold: var(--color-indigo-950);
+  --color-brand: var(--color-indigo-600);
+  --color-brand-subtle: var(--color-indigo-100);
+
+  --color-informative-bold: var(--color-sky-950);
+  --color-informative: var(--color-sky-600);
+  --color-informative-subtle: var(--color-sky-100);
+
+  --color-successful-bold: var(--color-emerald-950);
+  --color-successful: var(--color-emerald-600);
+  --color-successful-subtle: var(--color-emerald-100);
+
+  --color-cautionary-bold: var(--color-amber-950);
+  --color-cautionary: var(--color-amber-600);
+  --color-cautionary-subtle: var(--color-amber-100);
+
+  --color-destructive-bold: var(--color-rose-950);
+  --color-destructive: var(--color-rose-600);
+  --color-destructive-subtle: var(--color-rose-100);
+
+  /* Borders */
+  --color-border: var(--color-zinc-200);
+
+  /* Inputs */
+  --color-input: var(--color-border);
+
+  /* States */
+  --ring: var(--color-brand-bold);
+}
+
+.light-mode {
+  @include light;
+}
