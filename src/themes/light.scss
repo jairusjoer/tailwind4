@@ -40,6 +40,8 @@
   --ring: var(--color-brand-bold);
 }
 
-.light-mode {
-  @include light;
+@layer utilities {
+  .light-mode {
+    @include light;
+  }
 }

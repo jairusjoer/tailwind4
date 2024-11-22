@@ -33,12 +33,14 @@
   --color-border: var(--color-zinc-800);
 }
 
-:root {
-  @media (prefers-color-scheme: dark) {
+@layer utilities {
+  :root {
+    @media (prefers-color-scheme: dark) {
+      @include dark;
+    }
+  }
+
+  .dark-mode {
     @include dark;
   }
-}
-
-.dark-mode {
-  @include dark;
 }
